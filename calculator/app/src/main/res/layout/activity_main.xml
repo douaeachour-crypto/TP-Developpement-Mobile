@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+
+    <EditText
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:gravity="end|center_vertical"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text"
+        app:layout_constraintVertical_bias="0.113"
+        app:rowCount="5" >
+
+        <Button
+            android:id="@+id/C"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#808080"
+            android:onClick="opretions"
+            android:text="C"
+            android:textColor="#FFFFFF"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/AC"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#808080"
+            android:onClick="opretions"
+            android:text="AC"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/pourcentage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#808080"
+            android:onClick="opretions"
+            android:text="%"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF6D00"
+            android:onClick="opretions"
+            android:text="÷"
+            android:textColor="#FFFFFF"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF6D00"
+            android:onClick="opretions"
+            android:text="×"
+            android:textColor="#FFFFFF"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/soustraction"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF6D00"
+            android:onClick="opretions"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/addition"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF6D00"
+            android:onClick="opretions"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/plusmoins"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="opretions"
+            android:text="+/-"
+            android:textColor="#FFFFFF"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#333333"
+            android:onClick="HandleButtons"
+            android:text="."
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/egal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF6D00"
+            android:onClick="opretions"
+            android:text="="
+            android:textColor="#FFFFFF"
+            app:layout_column="3"
+            app:layout_row="4" />
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
